@@ -32,7 +32,7 @@
 
 *{
   /* Set default text color to black */
-  color: black;
+  color: white;
 }
 
 /******************************************
@@ -49,25 +49,27 @@ h2{
   font-size: 20px;
 }
 
-p{
+p, li{
   font-family: "MyriadProLight";
   font-size: 15px;
 }
 
-/******************************************
-  Navbar Offset
-******************************************/
-body{ margin-top: 70px; }
-
-.anchor{
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
+a:hover, a:focus{
+  text-decoration: none;
 }
+
+/******************************************
+  Containers
+******************************************/
+/* Navbar Offset */
+body{ margin-top: 70px; }
 
 body > .container-fluid{
   padding: 3% 0;
+}
+
+*:focus{
+  outline: 0;
 }
 
 .margins{
@@ -84,10 +86,111 @@ body > .container-fluid{
 
 #documents{
   background: #9B3629;
+  color: white;
+}
+
+#contact{
+  background: #335676;
+}
+
+#north{
+  border-style: solid;
+  border-width: 0;
+  border-right-width: 0.5px;
+  border-color: white;
+}
+
+.left{
+  float: left;
+  width: 50%;
+  padding-right: 1.5%;
+  border-style: solid;
+  border-width: 0;
+  border-right-width: 0.5px;
+  border-color: white;
+}
+
+.right{
+  float: right;
+  width: 50%;
+  padding-left: 1.5%;
+}
+
+.profile{
+  padding: 0 4%;
+}
+
+/******************************************
+  Documents
+******************************************/
+#documents .panel{
+  border-color: white;
+  border-width: 3px;
+  height: 150px;
+}
+
+#documents .panel:hover{
+  background: #9B3629;
+  transition: 0.3s ease;
+}
+
+#documents .panel:hover h2{
+  color: white;
+  transition: 0.3s ease;
+}
+
+#documents .panel:hover span{
+  display: none;
+}
+
+#documents .on-hover{
+  color: #9B3629;
+  display: none;
+}
+
+#documents .panel:hover .on-hover{
+  display: block;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#documents .panel h2{
+  color: #9B3629;
+  height: 50px;
+}
+
+#documents .panel p, span{
+  color: #9B3629;
+}
+
+.glyphicon-link{
+  font-size: 25px;
+}
+
+p a{
+  color: #85b1f7;
+}
+
+#contact a:hover{
+  color: #cee1ff;
 }
 
 @media screen and (max-width: 768px) {
+  p, li{
+    font-size: 12px;
+  }
   .margins{
     margin: 0 8%;
+  }
+  #north{
+    border: 0;
+  }
+  ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  .profile{
+    padding: 5% 25%;
   }
 }

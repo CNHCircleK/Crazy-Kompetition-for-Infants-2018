@@ -8,20 +8,19 @@
     <!-- Included are Bootstrap CSS & JS - see https://getbootstrap.com/ for more info and documentation -->
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <script src="Assets/JS/main.js"></script>
+	  <script src="Assets/JS/script.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" target="_blank" href="Assets/CSS/main.css">
     <link rel="stylesheet" target="_blank" href="Assets/CSS/nav.css">
 
-    <!-- TODO: ADD YOUR OWN favicon.ico -->
     <link rel="shortcut icon" target="_blank" href="favicon.ico" type="image/x-icon">
 
     <title>Crazy Kompetition For Infants 2018</title>
   </head>
   <body>
     <!-- DEFAULT TOP NAVBAR -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
       <div class="container-fluid full-height">
         <!-- Hamburger button for navbar on mobile screens -->
         <div class="navbar-header full-height">
@@ -30,43 +29,102 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand full-height" href="#"><img id="wordmark" src="Assets/white_wordmark.png" alt=""></a>
+          <a class="navbar-brand full-height" href="http://circlek.org" target="_blank"><img id="wordmark" src="Assets/white_wordmark.png" alt=""></a>
         </div>
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#banner-link">Home</a></li>
-            <li><a href="#about-link">About</a></li>
-            <li><a href="#documents-link">Documents</a></li>
-            <li></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="">FB Event</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <a href="http://www.cnhcirclek.org/"><img id="cnh" src="Assets/cnh.png" alt=""></a>
         </div>
       </div>
     </nav>
 
+
     <div class="container-fluid" id="banner">
-      <a class="anchor" id="banner-link"></a>
       <h1>[Banner]</h1>
 
       <br><br>
       <div class="container-fluid margins">
-        <div class="col-sm-6">
-          <h2 class="text-center">North</h2>
-          <p class="text-center">Day, Month DD</p>
-          <p class="text-center">HH:MM - HH:MM</p>
-          <p class="text-center">Location</p>
+        <div class="row">
+          <div class="col-sm-6" id="north">
+            <h2 class="text-center">North</h2>
+            <p class="text-center">Saturday, October 6</p>
+            <p class="text-center">8:00am - 4:00pm</p>
+            <p class="text-center">Tahoe Park, Sacramento, CA</p>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="text-center">South</h2>
+            <p class="text-center">Saturday, October 13</p>
+            <p class="text-center">8:00AM - 4:00PM</p>
+            <p class="text-center">Ralph B. Clark Regional Park, Buena Park, CA</p>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h2 class="text-center">South</h2>
-          <p class="text-center">Day, Month DD</p>
-          <p class="text-center">HH:MM - HH:MM</p>
-          <p class="text-center">Location</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-center">Registration</h2>
+            <ul>
+              <li>Teams (composed of 6 people)</li>
+              <li>Early Registration: $48 (**RECEIVED BY Friday, October 5**)</li>
+              <li>Regular & On-Site Registration: $72</li>
+              <li>Alternates / Individual Sign-Ups: $8/person</li>
+              <li>Judges / Spectators: $5</li>
+              <li>*Checks ONLY for Early Registration!</li>
+              <li>*Checks PREFERRED, cash ACCEPTED Regular & Onsite Registration!</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+
+            <h2 class="text-center">Schedule</h2>
+            <div class="left">
+              <p class="text-right">
+                8:00AM <br>
+                8:45AM <br>
+                9:00AM <br>
+                9:30AM <br>
+                10:00AM <br>
+                10:30AM <br>
+                11:00AM <br>
+                11:15AM <br>
+                11:45AM <br>
+                12:15PM <br>
+                12:45PM <br>
+                2:15PM <br>
+                2:45PM <br>
+                3:00PM&nbsp
+              </p>
+            </div>
+            <div class="right">
+              <p class="text-left">
+                Registration Begins <br>
+                Judges Meeting <br>
+                Opening Session / Roll Call <br>
+                Games Begin / Round One <br>
+                Round 2 <br>
+                Round 3 <br>
+                Break <br>
+                Round 4 <br>
+                Round 5 <br>
+                Round 6 <br>
+                Lunch & DCM's <br>
+                Finals <br>
+                Closing Session <br>
+                Clean Up
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
     <div class="container-fluid" id="about">
-      <a class="anchor" id="about-link"></a>
       <div class="margins">
         <h1>About</h1>
         <h2>Crazy Kompetition for Infants</h2>
@@ -83,17 +141,78 @@
           The Pediatric Trauma Program is a charity established by the Kiwanis Cal-Nev-Ha Foundation in 1994 which focuses on the need for education and training in pediatric trauma and injury prevention. The purpose of the program is to develop local service projects to educate people of children’s safety to decrease the number of children who are severely injured or killed due to traumatic unintentional injuries. Funds raised are used to purchase safety equipment, provide proper training to medical staff, and support projects created by our six partner hospitals.
         </p>
         <p>
-          [PTP Week Graphic]
+          [PTP Week Graphic] <br>
           Show your support for PTP by participating in PTP Week 2018!
         </p>
         <p>
-          For more information about PTP, please contact DFI Ambassador <a href="mailto:kevivn.ru01@gmail.com">Kevin Ru</a>, or visit <a href="http://cnhfoundation.org/supports/PTP.html" target="_blank">their website</a>.
+          For more information about PTP, please contact DFI Ambassador <b><a href="mailto:kevivn.ru01@gmail.com">Kevin Ru</a></b>, or visit <b><a href="http://cnhfoundation.org/supports/PTP.html" target="_blank">their website</a></b>.
         </p>
       </div>
     </div>
+
+
     <div class="container-fluid" id="documents">
-      <a class="anchor" id="documents-link"></a>
-      <h1>[Documents]</h1>
+      <h1>Documents</h1><br>
+      <div class="container-fluid margins">
+        <div class="col-md-6">
+          <a href="https://drive.google.com/file/d/1uEm2pGIdIQvE-4hxZpi1bLsLAbcdH0YS/view" target="_blank">
+            <div class="panel panel-default">
+              <h2 class="text-center">Team Registration Form + Waiver</h2>
+              <p class="text-center"><span class="glyphicon glyphicon-link"></span></p>
+              <p class="text-center on-hover">Must be <b>received</b> by October 5th</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScA_kajVnKeVNMtX_xAhAa3LyGPt5LG_lE7gH5MnivpN1ORFw/viewform" target="_blank">
+            <div class="panel panel-default">
+              <h2 class="text-center">Judge/Spectator Form</h2>
+              <p class="text-center"><span class="glyphicon glyphicon-link"></span></p>
+              <p class="text-center on-hover">Sign up to be a judge or spectator!</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="" target="_blank">
+            <div class="panel panel-default">
+              <h2 class="text-center">Playbook</h2>
+              <p class="text-center"><span class="glyphicon glyphicon-link"></span></p>
+              <p class="text-center on-hover">Get an inside look at Crazy Komp games & activities!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" id="contact">
+      <h1>Contact</h1>
+      <div class="margins">
+        <div class="col-sm-4 profile">
+          <img class="img-circle img-responsive img-center" src="https://cnhcirclek.github.io/Images/CommitteePhotos/FiFun/RendellLopez.jpg" alt="">
+          <h2 class="text-center">CKI North Chair</h2>
+          <p class="text-center">
+            Rendell Lopez <br>
+            <a href="mailto:rendellrlopez@gmail.com">rendellrlopez@gmail.com</a>
+          </p>
+        </div>
+        <div class="col-sm-4 profile">
+          <img class="img-circle img-responsive img-center" src="https://cnhcirclek.github.io/Images/CommitteePhotos/FiFun/ShairaRamirez-Santos.jpg" alt="">
+          <h2 class="text-center">District Treasurer</h2>
+          <p class="text-center">
+            Shaira Ramirez-Santos <br>
+            <a href="mailto:treasurer@cnhcirclek.org">treasurer@cnhcirclek.org</a>
+          </p>
+        </div>
+        <div class="col-sm-4 profile">
+          <img class="img-circle img-responsive img-center" src="https://cnhcirclek.github.io/Images/CommitteePhotos/FiFun/RyanLuong.jpg" alt="">
+          <h2 class="text-center">CKI South Chair</h2>
+          <p class="text-center">
+            Ryan Luong <br>
+            <a href="mailto:ryan.a.luong@gmail.com">ryan.a.luong@gmail.com</a>
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
