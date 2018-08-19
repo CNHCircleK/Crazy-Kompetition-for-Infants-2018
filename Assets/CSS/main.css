@@ -127,6 +127,7 @@ body > .container-fluid{
   border-color: white;
   border-width: 3px;
   height: 150px;
+  margin-bottom: 30px;
 }
 
 #documents .panel:hover{
