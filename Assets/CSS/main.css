@@ -1,0 +1,93 @@
+/* CNH CIRCLE K GRAPHICS STANDARDS COLORS:
+  Yellow #F2E18B
+  Olive Green #9EA374
+  Light Blue #C7D6EE
+  Red #820024
+  Dark Grey #58595B
+  Orange #F58025
+  Green #6A9448
+  Cyan #00A5D9
+  Blue #003D79
+  Black #231F20
+*/
+
+/* CNH CIRCLE K GRAPHICS STANDARDS FONTS: */
+@font-face{font-family: 'CenturyGothic'; src: url(../Fonts/CenturyGothic.ttf) format('truetype');}
+@font-face{font-family: 'MyriadPro'; src: url(../Fonts/MyriadPro-Regular.otf) format('opentype');}
+@font-face{font-family: 'Archer'; src: url(../Fonts/Archer-Semibold.otf) format('opentype');}
+@font-face{font-family: 'Garamond'; src: url(../Fonts/Garamond.ttf) format('truetype');}
+
+/* CRAZY KOMP 2018 COLORS:
+  Red #9B3629
+  Orange #F7811D
+  Green #029F61
+  Blue #335676
+  Gray-Green #788B89
+*/
+
+/* CRAZY KOMP 2018 FONTS */
+@font-face{font-family: 'AllExesMustDie'; src: url(../Fonts/AllExesMustDie.ttf) format('truetype');}
+@font-face{font-family: 'MyriadProLight'; src: url(../Fonts/MyriadPro-Light.otf) format('opentype');}
+@font-face{font-family: 'Survivant'; src: url(../Fonts/survivant.ttf) format('truetype');}
+
+*{
+  /* Set default text color to black */
+  color: black;
+}
+
+/******************************************
+  Main Text Elements
+******************************************/
+h1 {
+  font-family: "Survivant";
+  text-align: center;
+  margin: 30px 0;
+}
+
+h2{
+  font-family: "Survivant";
+  font-size: 20px;
+}
+
+p{
+  font-family: "MyriadProLight";
+  font-size: 15px;
+}
+
+/******************************************
+  Navbar Offset
+******************************************/
+body{ margin-top: 70px; }
+
+.anchor{
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+body > .container-fluid{
+  padding: 3% 0;
+}
+
+.margins{
+  margin: 0 18%;
+}
+
+#banner{
+  background: #788B89;
+}
+
+#about{
+  background: #F7811D;
+}
+
+#documents{
+  background: #9B3629;
+}
+
+@media screen and (max-width: 768px) {
+  .margins{
+    margin: 0 8%;
+  }
+}
