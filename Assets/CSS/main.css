@@ -28,6 +28,7 @@
 /* CRAZY KOMP 2018 FONTS */
 @font-face{font-family: 'AllExesMustDie'; src: url(../Fonts/AllExesMustDie.ttf) format('truetype');}
 @font-face{font-family: 'MyriadProLight'; src: url(../Fonts/MyriadPro-Light.otf) format('opentype');}
+@font-face{font-family: 'Montserrat'; src: url(../Fonts/Montserrat-Regular.otf) format('opentype');}
 @font-face{font-family: 'Survivant'; src: url(../Fonts/survivant.ttf) format('truetype');}
 
 *{
@@ -49,13 +50,19 @@ h2{
   font-size: 20px;
 }
 
-p, li{
-  font-family: "MyriadProLight";
+p, li, span{
+  font-family: "Montserrat";
   font-size: 15px;
 }
 
 a:hover, a:focus{
   text-decoration: none;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 /******************************************
@@ -76,8 +83,18 @@ body > .container-fluid{
   margin: 0 18%;
 }
 
+.panel{
+  border-color: white;
+  border-width: 3px;
+}
+
 #banner{
   background: #788B89;
+}
+#banner h2{ font-size: 26px; }
+#banner p, #banner li{
+  font-size: 18px;
+  line-height: 32px;
 }
 
 #about{
@@ -93,14 +110,22 @@ body > .container-fluid{
   background: #335676;
 }
 
-#north{
-  border-style: solid;
-  border-width: 0;
-  border-right-width: 0.5px;
-  border-color: white;
+/* FAQ */
+#FAQ, #FAQ div{
+  margin: 0; padding: 0;
+}
+#FAQ .left{ padding-right: 2%; }
+#FAQ .right{ padding-left: 2%; }
+
+/* Contact */
+.profile{
+  padding: 0 4%;
 }
 
-.left{
+/******************************************
+  Details
+******************************************/
+#banner .left{
   float: left;
   width: 50%;
   padding-right: 1.5%;
@@ -110,22 +135,56 @@ body > .container-fluid{
   border-color: white;
 }
 
-.right{
+#banner .right{
   float: right;
   width: 50%;
   padding-left: 1.5%;
 }
 
-.profile{
-  padding: 0 4%;
+/* This would be so much easier with angular */
+#banner .panel{
+  padding: 2%;
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+}
+#banner .panel:hover{
+  background: #788B89;
+  transition: 0.3s ease;
+}
+
+#banner span{
+  color: #788B89;
+}
+#banner .panel:hover span{
+  color: white;
+  transition: 0.3s ease;
+}
+
+#banner .glyphicon-link{ display: none; }
+#banner .panel:hover .glyphicon-link{ display: inline-block; }
+#banner .panel:hover .glyphicon-map-marker{ display: none; }
+
+/******************************************
+  Announcements
+******************************************/
+.carousel-control{
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.item{
+  width: 100%;
 }
 
 /******************************************
   Documents
 ******************************************/
 #documents .panel{
-  border-color: white;
-  border-width: 3px;
   height: 150px;
   margin-bottom: 30px;
   padding: 0 4%;
@@ -161,11 +220,11 @@ body > .container-fluid{
   height: 50px;
 }
 
-#documents .panel p, span{
+#documents .panel p, #documents .panel span{
   color: #9B3629;
 }
 
-.glyphicon-link{
+#documents .glyphicon-link{
   font-size: 25px;
 }
 
@@ -183,14 +242,6 @@ p a{
   }
   .margins{
     margin: 0 8%;
-  }
-  #north{
-    border: 0;
-  }
-  ul{
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
   }
   .profile{
     padding: 5% 25%;
