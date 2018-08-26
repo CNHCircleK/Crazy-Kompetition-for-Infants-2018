@@ -23,6 +23,12 @@
   Green #029F61
   Blue #335676
   Gray-Green #788B89
+
+  Red #E48C85
+  Orange #F4AF69
+  Green #86B5A2
+  Blue #B4C1CD
+  Light Blue #E8EBFC
 */
 
 /* CRAZY KOMP 2018 FONTS */
@@ -89,8 +95,13 @@ body > .container-fluid{
 }
 
 #banner{
-  background: #788B89;
+  background: #E8EBFC;
 }
+/* Change color of text here, since white is not readable */
+#banner h1, #banner h2, #banner p, #banner li{
+  color: #788B89;
+}
+/* Make "important" text bigger */
 #banner h2{ font-size: 26px; }
 #banner p, #banner li{
   font-size: 18px;
@@ -98,16 +109,16 @@ body > .container-fluid{
 }
 
 #about{
-  background: #F7811D;
+  background: #F4AF69;
 }
 
 #documents{
-  background: #9B3629;
+  background: #E48C85;
   color: white;
 }
 
 #contact{
-  background: #335676;
+  background: #B4C1CD;
 }
 
 /* FAQ */
@@ -123,7 +134,7 @@ body > .container-fluid{
 }
 
 /******************************************
-  Details
+  Details, Map Buttons
 ******************************************/
 #banner .left{
   float: left;
@@ -132,7 +143,7 @@ body > .container-fluid{
   border-style: solid;
   border-width: 0;
   border-right-width: 0.5px;
-  border-color: white;
+  border-color: #788B89;
 }
 
 #banner .right{
@@ -147,17 +158,19 @@ body > .container-fluid{
   width: 170px;
   margin: 0 auto;
   text-align: center;
+  background: #788B89;
+  border-color: #788B89;
 }
 #banner .panel:hover{
-  background: #788B89;
+  background: #E8EBFC;
   transition: 0.3s ease;
 }
 
 #banner span{
-  color: #788B89;
+  color: #E8EBFC;
 }
 #banner .panel:hover span{
-  color: white;
+  color: #788B89;
   transition: 0.3s ease;
 }
 
@@ -191,7 +204,7 @@ body > .container-fluid{
 }
 
 #documents .panel:hover{
-  background: #9B3629;
+  background: #E48C85;
   transition: 0.3s ease;
 }
 
@@ -205,7 +218,7 @@ body > .container-fluid{
 }
 
 #documents .on-hover{
-  color: #9B3629;
+  color: #E48C85;
   display: none;
 }
 
@@ -216,12 +229,12 @@ body > .container-fluid{
 }
 
 #documents .panel h2{
-  color: #9B3629;
+  color: #E48C85;
   height: 50px;
 }
 
 #documents .panel p, #documents .panel span{
-  color: #9B3629;
+  color: #E48C85;
 }
 
 #documents .glyphicon-link{
@@ -229,19 +242,34 @@ body > .container-fluid{
 }
 
 p a{
-  color: #85b1f7;
+  color: #5b7fba;
 }
 
-#contact a:hover{
+p a:hover{
   color: #cee1ff;
 }
 
 @media screen and (max-width: 768px) {
-  p, li{
+  h1{
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  h2{
+    font-size: 16px;
+  }
+  p, li, span{
     font-size: 12px;
   }
   .margins{
     margin: 0 8%;
+  }
+  #banner h2{ font-size: 20px; }
+  #banner p, #banner li{
+    font-size: 12px;
+    line-height: 24px;
+  }
+  #FAQ .left, #FAQ .right{
+    padding: 0;
   }
   .profile{
     padding: 5% 25%;
