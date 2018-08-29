@@ -65,12 +65,6 @@ a:hover, a:focus{
   text-decoration: none;
 }
 
-ul{
-  text-align: center;
-  list-style-type: none;
-  padding: 0;
-}
-
 /******************************************
   Containers
 ******************************************/
@@ -99,7 +93,7 @@ body > .container-fluid{
 }
 /* Change color of text here, since white is not readable */
 #banner h1, #banner h2, #banner p, #banner li{
-  color: #788B89;
+  color: #566172;
 }
 /* Make "important" text bigger */
 #banner h2{ font-size: 26px; }
@@ -125,8 +119,8 @@ body > .container-fluid{
 #FAQ, #FAQ div{
   margin: 0; padding: 0;
 }
-#FAQ .left{ padding-right: 2%; }
-#FAQ .right{ padding-left: 2%; }
+#FAQ .left-side{ padding-right: 2%; }
+#FAQ .right-side{ padding-left: 2%; }
 
 /* Contact */
 .profile{
@@ -136,17 +130,17 @@ body > .container-fluid{
 /******************************************
   Details, Map Buttons
 ******************************************/
-#banner .left{
+#banner .left-side{
   float: left;
   width: 50%;
   padding-right: 1.5%;
   border-style: solid;
   border-width: 0;
   border-right-width: 0.5px;
-  border-color: #788B89;
+  border-color: #566172;
 }
 
-#banner .right{
+#banner .right-side{
   float: right;
   width: 50%;
   padding-left: 1.5%;
@@ -158,8 +152,8 @@ body > .container-fluid{
   width: 170px;
   margin: 0 auto;
   text-align: center;
-  background: #788B89;
-  border-color: #788B89;
+  background: #566172;
+  border-color: #566172;
 }
 #banner .panel:hover{
   background: #E8EBFC;
@@ -170,8 +164,12 @@ body > .container-fluid{
   color: #E8EBFC;
 }
 #banner .panel:hover span{
-  color: #788B89;
+  color: #566172;
   transition: 0.3s ease;
+}
+
+#banner li{
+  font-size: 15px;
 }
 
 #banner .glyphicon-link{ display: none; }
@@ -181,13 +179,21 @@ body > .container-fluid{
 /******************************************
   Announcements
 ******************************************/
+.carousel-inner{
+  /* height: 300px; */
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; */
+}
+
 .carousel-control{
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
+   text-align: center;
+   opacity: 0.7;
+   background-image:none !important;
+   filter:none !important;
+}
+.carousel-control, .carousel-control:hover, .carousel-control:focus{
 }
 
 .item{
@@ -268,7 +274,7 @@ p a:hover{
     font-size: 12px;
     line-height: 24px;
   }
-  #FAQ .left, #FAQ .right{
+  #FAQ .left-side, #FAQ .right-side{
     padding: 0;
   }
   .profile{

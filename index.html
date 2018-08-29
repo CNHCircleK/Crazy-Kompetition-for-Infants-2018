@@ -38,15 +38,17 @@
             <li><a href="#about">About</a></li>
             <li><a href="#documents">Documents</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li id="last-item"><a href="">FB Event</a></li>
+            <!-- TODO: add FB event link -->
+            <li id="last-item"><a href="" target="_blank">FB Event</a></li>
           </ul>
-          <a href="http://www.cnhcirclek.org/"><img id="cnh" src="Assets/cnh.png" alt=""></a>
+          <a href="http://www.cnhcirclek.org/" target="_blank"><img id="cnh" src="Assets/cnh.png" alt=""></a>
         </div>
       </div>
     </nav>
 
 
     <div class="container-fluid" id="banner">
+      <!-- TODO: banner -->
       <h1>[Banner]</h1>
 
       <br><br>
@@ -85,19 +87,30 @@
 
         <br><br>
         <h2 class="text-center">Registration</h2>
-        <ul>
-          <li>Teams (composed of 6 people)</li>
-          <li>Early Registration: $48 (**RECEIVED BY Friday, October 5**)</li>
-          <li>Regular & On-Site Registration: $72</li>
-          <li>Alternates / Individual Sign-Ups: $8/person</li>
-          <li>Judges / Spectators: $5</li>
-          <li>*Checks ONLY for Early Registration!</li>
-          <li>*Checks PREFERRED, cash ACCEPTED Regular & Onsite Registration!</li>
-        </ul>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Early Registration (CHECKS ONLY)</p>
+            <ul>
+              <li>Teams (of 6 people): $48/team</li>
+              <li>Alternates/Individual Sign-Ups: $8/person</li>
+              <li>Judges and Spectators: $5/person</li>
+              <li>MUST BE RECEIVED BY September 28 for North and October 12 for South</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <p>Onsite Registration (CASH ONLY)</p>
+            <ul>
+              <li>Teams (of 6 people): $72/team</li>
+              <li>Alternates/Individual Sign-Ups: $12/person</li>
+              <li>Spectators: $5/person</li>
+            </ul>
+          </div>
+        </div>
 
         <br><br>
         <h2 class="text-center">Schedule</h2>
-        <div class="left">
+        <div class="left-side">
           <p class="text-right">
             8:00AM <br>
             8:45AM <br>
@@ -115,7 +128,7 @@
             3:00PM&nbsp
           </p>
         </div>
-        <div class="right">
+        <div class="right-side">
           <p class="text-left">
             Registration Begins <br>
             Judges Meeting <br>
@@ -136,38 +149,55 @@
       </div>
 
       <br><br>
-      <!-- <h1>Announcements</h1> -->
-      <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    	  Indicators
+      <h1>Announcements</h1>
+      <div id="myCarousel" class="carousel slide margins" data-ride="carousel">
+    	  <!-- Indicators -->
     	  <ol class="carousel-indicators">
-    	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    	    <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     	    <li data-target="#myCarousel" data-slide-to="1"></li>
-    	    <li data-target="#myCarousel" data-slide-to="2"></li>
+    	    <li data-target="#myCarousel" data-slide-to="2"></li> -->
     	  </ol>
 
-    	  Wrapper for slides
+    	  <!-- Wrapper for slides -->
     	  <div class="carousel-inner">
     	    <div class="item active">
-            <img src="Assets/cnh.png" alt="">
+            <p>
+              Welcome to the launch of the Crazy Kompetition for Infants website! Special thanks to the Technology Committee and District Technology Chair, Jonathan Chu, for creating the first ever Crazy Komp website. The Crazy Komp Chairs and Finance and Fundraising Committee have been hard at work the past few months putting together this event. Stay tuned for more updates and announcements throughout the next few weeks!
+            </p>
     	    </div>
 
-      	  Left and right controls
-      	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <!-- <div class="item">
+
+          </div>
+
+          <div class="item">
+
+          </div> -->
+
+          <!-- TODO: style these damn carousel controls -->
+      	  <!-- Left and right controls -->
+      	  <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       	    <span class="glyphicon glyphicon-chevron-left"></span>
       	    <span class="sr-only">Previous</span>
       	  </a>
       	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
       	    <span class="glyphicon glyphicon-chevron-right"></span>
       	    <span class="sr-only">Next</span>
-      	  </a>
-      	</div>-->
+      	  </a> -->
+      	</div>
       </div>
+    </div>
 
 
     <div class="container-fluid" id="about">
       <div class="margins">
-        <h1>[Picture Here]</h1>
         <h1>About</h1>
+        <div class="row">
+          <div class="col-sm-12"> <!-- yeah, this div is unnecessary but it gives me extra margins that align with the text so -->
+            <img src="Assets/north-photo.jpg" class="full-width" alt="">
+          </div>
+        </div>
+        <br>
         <h2>Crazy Kompetition for Infants</h2>
         <p>
           Crazy Kompetition for Infants (CKI) is an annual event that raises money for Pediatric Trauma Program (PTP) through a series of fun, competitive mini-games and relays. As the first District event of the academic year, Crazy Komp allows new members their first chance to meet so many different people while giving returning members an opportunity to reconnect with old friends.
@@ -175,7 +205,12 @@
         <p>
           Form teams within your home club or division and compete against other teams to be the last one standing! Crazy Komp will let you tap into your inner child and release your competitive spirit! Ask your club president about registering to find out if you have what it takes to come out on top!
         </p>
-
+        <br>
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="Assets/south-photo.jpg" class="full-width" alt="">
+          </div>
+        </div>
         <br>
         <h2>Pediatric Trauma Program</h2>
         <p>
@@ -192,19 +227,37 @@
         <br><br>
         <h1>FAQ</h1>
         <div class="container-fluid" id="FAQ">
-          <div class="col-sm-6 left">
-            <h2>Here is a question?</h2>
-            <p>Here is a slightly longer answer that will take up more space because it requires more explanation because lorem ipsum</p>
+          <div class="col-sm-6 left-side">
+            <h2>How much does attending Crazy Komp cost?</h2>
+            <p>
+              Early registration for teams are $8 per participant, for a total of $48 per team (alternates will be an additional $8). On-site registration for teams are $12 per participant, for a total of $72 per team (alternates will be an additional $12). Judges and spectators are $5 per person. Parking at Ralph B. Clark Regional Park for Crazy Komp South is $5 per car.
+            </p>
 
-            <h2>Here is a question?</h2>
-            <p>Here is a slightly longer answer that will take up more space because it requires more explanation because lorem ipsum</p>
+            <h2>Can teams be formed by members from different schools?</h2>
+            <p>
+              Yes! Just make sure to have each member submit registration through their respective school and to indicate on the registration form that they are on a team comprised of different team members.
+            </p>
+
+            <h2>Can clubs register with incomplete teams?</h2>
+            <p>
+              We recommend reaching out to your home club and division (eg. by posting on FB pages or asking around during general meetings or DCMs) if you are struggling to find a complete team. However, incomplete teams are still welcome -- we will combine incomplete teams on-site!
+            </p>
           </div>
-          <div class="col-sm-6 right">
-            <h2>Here is a question?</h2>
-            <p>Here is a slightly longer answer that will take up more space because it requires more explanation because lorem ipsum</p>
+          <div class="col-sm-6 right-side">
+          <h2>Can clubs make changes to their teams after they have submitted registration? </h2>
+          <p>
+            We understand that quarter schools only have a few weeks to advertise Crazy Komp to their members, so we will allow for team switches to happen on-site. However, we request that a club representative (eg. Club President or Treasurer) provide a list of all finalized teams and members in attendance on-site.
+          </p>
 
-            <h2>Here is a question?</h2>
-            <p>Here is a slightly longer answer that will take up more space because it requires more explanation because lorem ipsum</p>
+          <h2>Are teams required to have a theme and dress up?</h2>
+          <p>
+            Although teams and individual members are not required to dress up, we do encourage y'all to dress up and get creative with your team names since it enhances the member experience!
+          </p>
+
+          <h2>Can I attend Crazy Komp without participating on a team?</h2>
+          <p>
+            Although we recommend that attendees do play on a team, we understand that participating may not be everyone's cup of tea. You can still attend Crazy Komp as a judge, spectator, or on-site first aid medic.
+          </p>
           </div>
         </div>
       </div>
@@ -235,7 +288,7 @@
         <div class="col-md-6">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScA_kajVnKeVNMtX_xAhAa3LyGPt5LG_lE7gH5MnivpN1ORFw/viewform" target="_blank">
             <div class="panel panel-default">
-              <h2 class="text-center">Judge/Spectator Form</h2>
+              <h2 class="text-center">Judge/Spectator/Medic Signup Form</h2>
               <p class="text-center"><span class="glyphicon glyphicon-link"></span></p>
               <p class="text-center on-hover">Sign up to be a judge or spectator!</p>
             </div>
