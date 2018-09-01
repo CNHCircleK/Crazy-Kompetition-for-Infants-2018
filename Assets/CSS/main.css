@@ -88,16 +88,16 @@ body > .container-fluid{
   border-width: 3px;
 }
 
-#banner{
+#details{
   background: #E8EBFC;
 }
 /* Change color of text here, since white is not readable */
-#banner h1, #banner h2, #banner p, #banner li{
+#details h1, #details h2, #details p, #details li{
   color: #566172;
 }
 /* Make "important" text bigger */
-#banner h2{ font-size: 26px; }
-#banner p, #banner li{
+#details h2{ font-size: 26px; }
+#details p, #details li{
   font-size: 18px;
   line-height: 32px;
 }
@@ -128,9 +128,18 @@ body > .container-fluid{
 }
 
 /******************************************
-  Details, Map Buttons
+  Banner, Details, Map Buttons
 ******************************************/
-#banner .left-side{
+#banner-cont{
+  background: #E8EBFC;
+}
+#banner{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+#details .left-side{
   float: left;
   width: 50%;
   padding-right: 1.5%;
@@ -140,14 +149,14 @@ body > .container-fluid{
   border-color: #566172;
 }
 
-#banner .right-side{
+#details .right-side{
   float: right;
   width: 50%;
   padding-left: 1.5%;
 }
 
 /* This would be so much easier with angular */
-#banner .panel{
+#details .panel{
   padding: 2%;
   width: 170px;
   margin: 0 auto;
@@ -155,26 +164,26 @@ body > .container-fluid{
   background: #566172;
   border-color: #566172;
 }
-#banner .panel:hover{
+#details .panel:hover{
   background: #E8EBFC;
   transition: 0.3s ease;
 }
 
-#banner span{
+#details span{
   color: #E8EBFC;
 }
-#banner .panel:hover span{
+#details .panel:hover span{
   color: #566172;
   transition: 0.3s ease;
 }
 
-#banner li{
+#details li{
   font-size: 15px;
 }
 
-#banner .glyphicon-link{ display: none; }
-#banner .panel:hover .glyphicon-link{ display: inline-block; }
-#banner .panel:hover .glyphicon-map-marker{ display: none; }
+#details .glyphicon-link{ display: none; }
+#details .panel:hover .glyphicon-link{ display: inline-block; }
+#details .panel:hover .glyphicon-map-marker{ display: none; }
 
 /******************************************
   Announcements
@@ -269,8 +278,8 @@ p a:hover{
   .margins{
     margin: 0 8%;
   }
-  #banner h2{ font-size: 20px; }
-  #banner p, #banner li{
+  #details h2{ font-size: 20px; }
+  #details p, #details li{
     font-size: 12px;
     line-height: 24px;
   }

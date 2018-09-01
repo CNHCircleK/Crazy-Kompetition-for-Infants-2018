@@ -4,6 +4,7 @@
     <!-- TODO: SET UP GOOGLE ANALYTICS TO TRACK TRAFFIC analytics.google.com -->
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Included are Bootstrap CSS & JS - see https://getbootstrap.com/ for more info and documentation -->
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -34,30 +35,36 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#banner">Home</a></li>
+            <li><a href="#details">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#documents">Documents</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!-- TODO: add FB event link -->
-            <li id="last-item"><a href="" target="_blank">FB Event</a></li>
+            <li id="last-item" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                FB Event <span class="glyphicon glyphicon-triangle-bottom"></span>
+              </a>
+              <div id="dropdown-div" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="http://tinyurl.com/CKINorthFB18" target="_blank">CKI North</a> <br>
+                <a class="dropdown-item" href="http://tinyurl.com/CKISouthFB18" target="_blank">CKI South</a>
+              </div>
+            </li>
           </ul>
           <a href="http://www.cnhcirclek.org/" target="_blank"><img id="cnh" src="Assets/cnh.png" alt=""></a>
         </div>
       </div>
     </nav>
 
+    <div id="banner-cont" class="full-width">
+      <img id="banner" src="Assets/Banner.png" alt="">
+    </div>
 
-    <div class="container-fluid" id="banner">
-      <!-- TODO: banner -->
-      <h1>[Banner]</h1>
-
-      <br><br>
+    <div class="container-fluid" id="details">
       <div class="container-fluid margins">
         <div class="row">
           <div class="col-sm-6">
             <h2 class="text-center">North</h2>
             <p class="text-center">Saturday, October 6</p>
-            <p class="text-center">8:00am - 4:00pm</p>
+            <p class="text-center">8:00AM - 4:00PM</p>
             <p class="text-center">Tahoe Park</p>
             <p class="text-center">Sacramento, CA</p>
             <a href="Assets/north-map.png" target="_blank">
@@ -125,7 +132,7 @@
             12:45PM <br>
             2:15PM <br>
             2:45PM <br>
-            3:00PM&nbsp
+            3:30PM&nbsp
           </p>
         </div>
         <div class="right-side">
@@ -272,7 +279,7 @@
             <div class="panel panel-default">
               <h2 class="text-center">Team Registration Form</h2>
               <p class="text-center"><span class="glyphicon glyphicon-link"></span></p>
-              <p class="text-center on-hover">Must be <b>received</b> by October 5th</p>
+              <p class="text-center on-hover">Must be <strong>received by</strong> September 28 for CKI North and October 12 for CKI South</p>
             </div>
           </a>
         </div>
@@ -316,7 +323,7 @@
           <h2 class="text-center">CKI North Chair</h2>
           <p class="text-center">
             Rendell Lopez <br>
-            <a href="mailto:rendellrlopez@gmail.com">rendellrlopez@gmail.com</a>
+            <a href="mailto:fifun.crazykomp@gmail.com">fifun.crazykomp@gmail.com</a>
           </p>
         </div>
         <div class="col-sm-4 profile">
@@ -332,7 +339,7 @@
           <h2 class="text-center">CKI South Chair</h2>
           <p class="text-center">
             Ryan Luong <br>
-            <a href="mailto:ryan.a.luong@gmail.com">ryan.a.luong@gmail.com</a>
+            <a href="mailto:fifun.crazykomp@gmail.com">fifun.crazykomp@gmail.com</a>
           </p>
         </div>
       </div>
