@@ -1,7 +1,3 @@
-$('.carousel').carousel({
-  interval: 800 * 10
-});
-
 $(function() {
   //stripes disappear after scrolling down a little
   $(window).scroll(function() {
@@ -39,5 +35,9 @@ $(function() {
           });
         }
       }
+    });
+
+    $('.carousel').carousel({
+      interval: 800 * 10
     });
 });
